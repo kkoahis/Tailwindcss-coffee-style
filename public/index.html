@@ -5,20 +5,26 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="./output.css" type="text/css" rel="stylesheet">
-   <title>Coffe-Style</title>
+   <link rel="icon" href="../public/img/favicon/coffee-bean.png">
+   <script src="./main.js" type="text/javascript" async></script>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+
+   <title>Coffee Style</title>
 </head>
 
 <body>
    <div id="root">
-      <div class="content-wrapper max-w-screen-2xl  bg-zinc-300 text-base mx-auto px-8">
-         <header class="py-6 mx-10">
-            <nav class="flex flex-row justify-between items-center">
+      <div class="content-wrapper font-Karla max-w-screen-2xl  bg-zinc-300 text-base mx-auto px-8">
+         <header class="p-6 mx-auto">
+            <nav class="flex flex-row justify-between items-center relative">
                <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
                   CoffeeStyle.
                </div>
 
-               <ul class="basis-3/6 flex items-center justify-end gap-8 uppercase text-sm text-gray-500 font-medium">
-                  <li class="koa-top-menu-item">
+               <ul id="koa-top-menu"
+                  class="basis-3/6 lg:flex hidden lg:items-center lg:justify-end lg:gap-8 uppercase text-sm text-gray-500 font-medium">
+                  <li class="koa-top-menu-item koa-top-menu-item-active">
                      <a href="#" class="">Home</a>
                   </li>
                   <li class="koa-top-menu-item">
@@ -38,7 +44,8 @@
                   </li>
                </ul>
 
-               <ul class="basis-1/6 flex justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
+               <ul
+                  class="lg:basis-1/6 basis-3/6 flex justify-end lg:justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
                   <li class="koa-top-menu-item">
                      <a href="#" class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -51,12 +58,109 @@
                      </a>
                   </li>
                </ul>
+
+               <div class="basis-1/6 lg:hidden flex items-center cursor-pointer sm:px-8 px-3">
+                  <svg id="koa-toggle-top-menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                     stroke-width="1.5" stroke="currentColor" class="koa-icon">
+                     <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+
+               </div>
             </nav>
          </header>
 
          <main>
             <div class="slider">
-               Slider
+               <div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
+                  <!-- Carousel wrapper -->
+                  <div class="relative xl:h-[700px] overflow-hidden rounded-lg lg:h-96 md:h-80 sm:h-72 max-sm:h-44 ">
+                     <!-- Item 1 -->
+                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./img/carousel/nathan-dumlao-6VhPY27jdps-unsplash.jpg"
+                           class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="...">
+                        <div
+                           class="absolute max-[1024px]:hidden top-3/4 mt-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-semibold tracking-wider ">
+                           <div class="block font-Karla text-3xl font-normal text-center ">Aroma Brews</div>
+                           <div class="block font-Karla text-base font-bold drop-shadow-sm">Indulge in exquisite flavors
+                              and serene ambiance</div>
+                        </div>
+                     </div>
+                     <!-- Item 2 -->
+                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./img/carousel/white-rainforest-6oLSU60_WIg-unsplash.jpg"
+                           class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <div
+                           class="absolute max-[1024px]:hidden  top-3/4 mt-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-semibold tracking-wider">
+                           <h2 class="block font-Karla text-3xl font-normal text-center">Aroma Brews</h2>
+                           <div class="block font-Karla text-base font-bold drop-shadow-sm">Indulge in the perfect blend
+                              of flavor and inspiration</div>
+                        </div>
+                     </div>
+                     <!-- Item 3 -->
+                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./img/carousel/clem-onojeghuo-zlABb6Gke24-unsplash.jpg"
+                           class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <div
+                           class="absolute max-[1024px]:hidden  top-3/4 mt-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-semibold tracking-wider">
+                           <h2 class="block font-Karla text-3xl font-normal text-center">Aroma Brews</h2>
+                           <div class="block font-Karla text-base font-bold drop-shadow-sm">Discover the perfect blend
+                              of flavors and aromas</div>
+                        </div>
+                     </div>
+                     <!-- Item 4 -->
+                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./img/carousel/toa-heftiba-I15IaXms4G0-unsplash.jpg"
+                           class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <div
+                           class="absolute max-[1024px]:hidden  top-3/4 mt-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-semibold tracking-wider">
+                           <h2 class="block font-Karla text-3xl font-normal text-center">Aroma Brews</h2>
+                           <div class="block font-Karla text-base font-bold drop-shadow-sm">Experience the rich flavors
+                              and delightful moments</div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <!-- Slider indicators -->
+                  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                     <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                     <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                     <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                     <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                        data-carousel-slide-to="3"></button>
+
+                  </div>
+                  <!-- Slider controls -->
+                  <button type="button"
+                     class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                     data-carousel-prev>
+                     <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                           stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                           </path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                     </span>
+                  </button>
+                  <button type="button"
+                     class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                     data-carousel-next>
+                     <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                           stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                           </path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                     </span>
+                  </button>
+               </div>
             </div> <!-- end slider -->
 
 
