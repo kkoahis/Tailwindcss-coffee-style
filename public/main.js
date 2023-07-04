@@ -22,6 +22,8 @@ window.addEventListener("resize", (e) => {
       if (topMenu.classList.contains("koa-top-menu-expanded")) {
          topMenu.classList.add("hidden");
          topMenu.classList.toggle("koa-top-menu-expanded");
+      }else{
+         topMenu.classList.add("hidden");
       }
    }
 });
