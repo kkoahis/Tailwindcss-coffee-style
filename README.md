@@ -1,4 +1,4 @@
-#TailwindCSS Coffee Style by Trungquandev
+#TailwindCSS Coffee Style by koahis
 
 ##Requirements
 
