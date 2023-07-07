@@ -560,6 +560,10 @@ video {
   left: 50%;
 }
 
+.left-\[calc\(-50vw_\+_49\.45\%\)\]{
+  left: calc(-50vw + 49.45%);
+}
+
 .right-0{
   right: 0px;
 }
@@ -584,62 +588,6 @@ video {
   top: 75%;
 }
 
-.left-\[calc\(-50vw\+50\%\)\]{
-  left: calc(-50vw + 50%);
-}
-
-.left-\[calc\(-50vw_\+_50\%\)\]{
-  left: calc(-50vw + 50%);
-}
-
-.left-\[calc\(-49vw_\+_50\%\)\]{
-  left: calc(-49vw + 50%);
-}
-
-.left-\[calc\(-50vw_\+_49\.9\%\)\]{
-  left: calc(-50vw + 49.9%);
-}
-
-.left-\[calc\(-50vw_\+_49\.6\%\)\]{
-  left: calc(-50vw + 49.6%);
-}
-
-.left-\[calc\(-50vw_\+_49\%\)\]{
-  left: calc(-50vw + 49%);
-}
-
-.left-\[calc\(-50vw_\+_49\.1\%\)\]{
-  left: calc(-50vw + 49.1%);
-}
-
-.left-\[calc\(-50vw_\+_49\.2\%\)\]{
-  left: calc(-50vw + 49.2%);
-}
-
-.left-\[calc\(-50vw_\+_49\.3\%\)\]{
-  left: calc(-50vw + 49.3%);
-}
-
-.left-\[calc\(-50vw_\+_49\.4\%\)\]{
-  left: calc(-50vw + 49.4%);
-}
-
-.left-\[calc\(-50vw_\+_49\.5\%\)\]{
-  left: calc(-50vw + 49.5%);
-}
-
-.left-\[calc\(-50vw_\+_49\.45\%\)\]{
-  left: calc(-50vw + 49.45%);
-}
-
-.left-\[calc\(-50vw_\+_49\.49\%\)\]{
-  left: calc(-50vw + 49.49%);
-}
-
-.left-\[calc\(-50vw_\+_49\.47\%\)\]{
-  left: calc(-50vw + 49.47%);
-}
-
 .z-30{
   z-index: 30;
 }
@@ -654,9 +602,19 @@ video {
   margin-right: auto;
 }
 
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .mb-16{
@@ -703,6 +661,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -743,6 +705,10 @@ video {
   height: 290px;
 }
 
+.h-\[300px\]{
+  height: 300px;
+}
+
 .h-\[380px\]{
   height: 380px;
 }
@@ -751,28 +717,16 @@ video {
   height: 400px;
 }
 
+.h-\[500px\]{
+  height: 500px;
+}
+
 .h-full{
   height: 100%;
 }
 
 .h-px{
   height: 1px;
-}
-
-.h-\[616px\]{
-  height: 616px;
-}
-
-.h-24{
-  height: 6rem;
-}
-
-.h-\[500px\]{
-  height: 500px;
-}
-
-.min-h-\[500px\]{
-  min-height: 500px;
 }
 
 .w-11\/12{
@@ -795,32 +749,16 @@ video {
   width: 100px;
 }
 
+.w-\[100vw\]{
+  width: 100vw;
+}
+
 .w-\[95\%\]{
   width: 95%;
 }
 
 .w-full{
   width: 100%;
-}
-
-.w-96{
-  width: 24rem;
-}
-
-.w-1\/2{
-  width: 50%;
-}
-
-.w-\[100vh\]{
-  width: 100vh;
-}
-
-.w-\[100vw\]{
-  width: 100vw;
-}
-
-.w-\[99vw\]{
-  width: 99vw;
 }
 
 .max-w-screen-2xl{
@@ -849,6 +787,10 @@ video {
 
 .basis-3\/6{
   flex-basis: 50%;
+}
+
+.basis-1{
+  flex-basis: 0.25rem;
 }
 
 .-translate-x-1\/2{
@@ -883,6 +825,10 @@ video {
 
 .flex-col{
   flex-direction: column;
+}
+
+.items-start{
+  align-items: flex-start;
 }
 
 .items-center{
@@ -927,6 +873,20 @@ video {
   border-radius: 9999px;
 }
 
+.border{
+  border-width: 1px;
+}
+
+.border-dashed{
+  border-style: dashed;
+}
+
+.border-y-coffee-200{
+  --tw-border-opacity: 1;
+  border-top-color: rgb(200 159 148 / var(--tw-border-opacity));
+  border-bottom-color: rgb(200 159 148 / var(--tw-border-opacity));
+}
+
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -949,11 +909,6 @@ video {
 
 .bg-white\/30{
   background-color: rgb(255 255 255 / 0.3);
-}
-
-.bg-red-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/img\/mugs\/amr-taha-mQWsg4JlYHc-unsplash\.jpg\'\)\]{
@@ -988,6 +943,14 @@ video {
   background-image: url('./img/mugs/jeremy-yap-jn-HaGWe4yw-unsplash.jpg');
 }
 
+.bg-\[url\(\'\.\/img\/mugs\/joshua-rodriguez-f7zm5TDOi4g-unsplash\.jpg\'\)\]{
+  background-image: url('./img/mugs/joshua-rodriguez-f7zm5TDOi4g-unsplash.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/mugs\/lifestyle-story-01\.jpeg\'\)\]{
+  background-image: url('./img/mugs/lifestyle-story-01.jpeg');
+}
+
 .bg-\[url\(\'\.\/img\/mugs\/nathan-dumlao-nBJHO6wmRWw-unsplash\.jpg\'\)\]{
   background-image: url('./img/mugs/nathan-dumlao-nBJHO6wmRWw-unsplash.jpg');
 }
@@ -1012,12 +975,12 @@ video {
   background-image: url('./img/mugs/tabitha-turner-F0Wd4djYvSA-unsplash.jpg');
 }
 
-.bg-\[url\(\'\.\/img\/mugs\/joshua-rodriguez-f7zm5TDOi4g-unsplash\.jpg\'\)\]{
-  background-image: url('./img/mugs/joshua-rodriguez-f7zm5TDOi4g-unsplash.jpg');
+.bg-\[url\(\'\.\/img\/mugs\/lifestyle-story-02\.jpeg\'\)\]{
+  background-image: url('./img/mugs/lifestyle-story-02.jpeg');
 }
 
-.bg-\[url\(\'\.\/img\/mugs\/pars-sahin-7cyOWzgjI_c-unsplash\.jpg\'\)\]{
-  background-image: url('./img/mugs/pars-sahin-7cyOWzgjI_c-unsplash.jpg');
+.bg-\[url\(\'\.\/img\/mugs\/lifestyle-story-03\.jpeg\'\)\]{
+  background-image: url('./img/mugs/lifestyle-story-03.jpeg');
 }
 
 .bg-cover{
@@ -1087,6 +1050,10 @@ video {
   line-height: 2.5rem;
 }
 
+.text-\[13px\]{
+  font-size: 13px;
+}
+
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1144,6 +1111,10 @@ video {
   letter-spacing: 0.05em;
 }
 
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+
 .text-coffee-400{
   --tw-text-opacity: 1;
   color: rgb(162 95 75 / var(--tw-text-opacity));
@@ -1167,6 +1138,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .line-through{
@@ -1325,7 +1301,7 @@ video {
 }
 
 .koa-button:hover{
-  --tw-bg-opacity: 0.9;
+  --tw-bg-opacity: 0.95;
 }
 
 .after\:absolute::after{
