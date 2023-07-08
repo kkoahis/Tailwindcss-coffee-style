@@ -22,9 +22,19 @@ window.addEventListener("resize", (e) => {
       if (topMenu.classList.contains("koa-top-menu-expanded")) {
          topMenu.classList.add("hidden");
          topMenu.classList.toggle("koa-top-menu-expanded");
-      }else{
+      } else {
          topMenu.classList.add("hidden");
       }
    }
 });
+
+const toTop = document.querySelector(".top");
+
+window.addEventListener("scroll", () => {
+   if (window.pageYOffset > 100) {
+      toTop.classList.add("active");
+   } else {
+      toTop.classList.remove("active");
+   }
+})
 
