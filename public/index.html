@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="./output.css" type="text/css" rel="stylesheet">
-   <link rel="icon" href="./img/favicon/latte-art.png">
+   <link rel="icon" href="../public/img/favicon/latte-art.png">
    <script src="./main.js" type="text/javascript" async></script>
    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
@@ -143,8 +143,8 @@
                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                      data-carousel-prev>
                      <span
-                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 " fill="none"
                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
                            </path>
@@ -156,8 +156,8 @@
                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                      data-carousel-next>
                      <span
-                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none"
                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                            </path>
@@ -175,7 +175,8 @@
             </div>
 
 
-            <div class="story flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-4 w-[95%] lg:w-[65%] mx-auto mb-24">
+            <div
+               class="story flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-4 w-[95%] lg:w-[65%] mx-auto mb-24">
                <div class="basis-1/2">
                   <video autoplay loop muted class="w-full h-full object-cover min-h-[350px]">
                      <source src="./video/video-coffee.mp4" type="video/mp4">
@@ -189,7 +190,8 @@
                      Everyone has their favourite brewing method.</div>
                   <div>
                      <a href="#"
-                        class="text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-coffee-50 hover:after:bg-coffee-200 after:h-0.5 after:w-full after:transition-all after:ease-in-out after:duration-400">Read the full Story</a>
+                        class="text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-coffee-50 hover:after:bg-coffee-200 after:h-0.5 after:w-full after:transition-all after:ease-in-out after:duration-400">Read
+                        the full Story</a>
                   </div>
                </div>
             </div> <!-- end story -->
@@ -507,7 +509,7 @@
             </div> <!-- end coffe-magazine -->
 
             <div
-               class="koa-parallax-section bg-[url('./img/mugs/joshua-rodriguez-f7zm5TDOi4g-unsplash.jpg')] bg-fixed bg-center bg-no-repeat bg-cover h-[500px]x mb-24 w-[100vw] relative left-[calc(-50vw_+_49.45%)]">
+               class="koa-parallax-section bg-[url('./img/mugs/joshua-rodriguez-f7zm5TDOi4g-unsplash.jpg')] bg-fixed bg-center bg-no-repeat bg-cover h-[500px] mb-24 w-[100vw] relative left-[calc(-50vw_+_49.45%)]">
             </div> <!-- end koa-parallax-section -->
 
 
@@ -531,7 +533,7 @@
                            </div>
                         </a>
                      </div>
-                     <div class=" text-left my-6">
+                     <div class="md:text-center text-left my-6">
                         <a href="" alt="product-name">
                            <div class="text-xl mb-3 hover:text-coffee-400 ">Health Check: why do I get a headache when I
                               haven't had my coffee?</div>
@@ -560,7 +562,7 @@
                            </div>
                         </a>
                      </div>
-                     <div class=" text-left my-6 ">
+                     <div class="md:text-center text-left my-6 ">
                         <a href="" alt="product-name">
                            <div class="text-xl mb-3 hover:text-coffee-400 ">Recent research suggests that heavy coffee
                               drinkers may reap health benefits.</div>
@@ -589,7 +591,7 @@
                            </div>
                         </a>
                      </div>
-                     <div class=" text-left my-6">
+                     <div class="md:text-center text-left my-6">
                         <a href="" alt="product-name" class="">
                            <div class="text-xl mb-3 hover:text-coffee-400 ">Unveiling the Temporal Influence of Coffee:
                               How Long Does its Wakefulness Persist?</div>
@@ -640,8 +642,10 @@
                   <div class="logo mb-4 text-xl font-semibold cursor-default text-black">
                      AromaBrews.
                   </div>
-                  <div class="md:mb-20 mb-8">Aroma Brews: Indulge in the Finest Coffee Experience, Crafted with Passion and Precision.</div>
-                  <div class="text-gray-400 hover:text-coffee-400 cursor-default">kkoahis aka NguyenVanKhoa. © 2023</div>
+                  <div class="md:mb-20 mb-8">Aroma Brews: Indulge in the Finest Coffee Experience, Crafted with Passion
+                     and Precision.</div>
+                  <div class="text-gray-400 hover:text-coffee-400 cursor-default">kkoahis aka NguyenVanKhoa. © 2023
+                  </div>
                </div>
                <div class="basis-1/6">
                   <div class="uppercase font-semibold tracking-wider text-gray-600 mb-4">Menu</div>
@@ -657,25 +661,38 @@
                <div class="basis-1/6">
                   <div class="uppercase font-semibold tracking-wider text-gray-600 mb-4">Follow Us</div>
                   <div class="flex flex-col justify-start gap-3">
-                     <div class=""><a href="https://fb.com/kkoahis" target="_blank" class="hover:text-coffee-400 cursor-pointer">Facebook</a></div>
-                     <div class=""><a href="https://www.instagram.com/kk.oahis/kkoahis" target="_blank" class="hover:text-coffee-400 cursor-pointer">Instagram</a></div>
-                     <div class=""><a href="https://www.youtube.com/channel/UCsoVJPlnPC8cdElPCYw-Bqg" target="_blank" class="hover:text-coffee-400 cursor-pointer">Youtube</a></div>
-                     <div class=""><a href="https://www.pinterest.com/khoakun27/" target="_blank" class="hover:text-coffee-400 cursor-pointer">Pinterest</a></div>
-                     <div class=""><a href="https://fb.com/kkoahis" target="_blank" class="hover:text-coffee-400 cursor-pointer">Zalo</a></div>
+                     <div class=""><a href="https://fb.com/kkoahis" target="_blank"
+                           class="hover:text-coffee-400 cursor-pointer">Facebook</a></div>
+                     <div class=""><a href="https://www.instagram.com/kk.oahis/kkoahis" target="_blank"
+                           class="hover:text-coffee-400 cursor-pointer">Instagram</a></div>
+                     <div class=""><a href="https://www.youtube.com/channel/UCsoVJPlnPC8cdElPCYw-Bqg" target="_blank"
+                           class="hover:text-coffee-400 cursor-pointer">Youtube</a></div>
+                     <div class=""><a href="https://www.pinterest.com/khoakun27/" target="_blank"
+                           class="hover:text-coffee-400 cursor-pointer">Pinterest</a></div>
+                     <div class=""><a href="https://fb.com/kkoahis" target="_blank"
+                           class="hover:text-coffee-400 cursor-pointer">Zalo</a></div>
                   </div>
                </div>
                <div class="basis-2/6">
                   <div class="uppercase font-semibold tracking-wider text-gray-600 md:mb-4 mb-8">Contact us</div>
                   <div class="mb-4">We're always happy to hear from you</div>
                   <div class="mb-[90px] text-gray-800 text-[22px] font-normal tracking-wide">
-                     <a href="mailto:khoakun27@gmail.com" class="hover:text-coffee-400 cursor-pointe">khoakun27@gmail.com</a>
+                     <a href="mailto:khoakun27@gmail.com"
+                        class="hover:text-coffee-400 cursor-pointe">khoakun27@gmail.com</a>
                   </div>
-                  <div><a href="https://github.com/kkoahis" target="_blank" class="hover:text-coffee-400 cursor-pointer text-gray-400">Powered by kkoahis Author</a></div>
+                  <div><a href="https://github.com/kkoahis" target="_blank"
+                        class="hover:text-coffee-400 cursor-pointer text-gray-400">Powered by kkoahis Author</a></div>
                </div>
             </div>
          </footer>
       </div> <!-- end content-wrapper -->
    </div> <!-- end root -->
+   <a href="#"
+      class="top">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+      </svg>
+   </a>
 </body>
 
 </html>
